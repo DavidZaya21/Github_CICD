@@ -1,0 +1,16 @@
+name: Github action
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  hello:
+    run_on: ubuntu-latest
+    steps:
+      - name: Hello
+        run: echo "hello"
